@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <link href="styles.css" rel="stylesheet" />
+  <script type="application/javascript">
+    function draw() {
+      var canvas = document.getElementById('canvas');
+      if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        
+        ctx.beginPath();
+        ctx.ellipse(400, 265, 200, 150, Math.PI, 0, Math.PI, false);
+        ctx.fillStyle = '#795548';
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.ellipse(400, 335, 200, 150, Math.PI, Math.PI, 0, false);
+        ctx.fillStyle = '#795548';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillRect(190, 270, 420, 60, '#4E342E');
+
+        ctx.beginPath();
+        ctx.ellipse(190, 300, 30, 20, 1.5 * Math.PI, Math.PI, 2 * Math.PI, false);
+        ctx.fillStyle = '#795548';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.ellipse(610, 300, 30, 20, 0.5 * Math.PI, Math.PI, 2 * Math.PI, false);
+        ctx.fillStyle = '#795548';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(400, 40);
+        ctx.lineWidth = 5;
+        ctx.lineTo(400, 115);
+        ctx.strokeStyle = '#D7CCC8';
+        ctx.stroke();
+
+        // colors from https://www.materialui.co/colors
+
+        // some sesame seeds
+        ctx.beginPath();
+        ctx.ellipse(220, 250, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(270, 250, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(320, 250, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(370, 250, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(420, 250, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(470, 250, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(520, 250, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(570, 250, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#F5F5F5';
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.ellipse(250, 220, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(300, 220, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(350, 220, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(400, 220, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(450, 220, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(500, 220, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(550, 220, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#F5F5F5';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.ellipse(300, 190, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(350, 190, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(400, 190, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(450, 190, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(500, 190, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#F5F5F5';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.ellipse(300, 160, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(350, 160, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(400, 160, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(450, 160, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(500, 160, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#F5F5F5';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.ellipse(350, 130, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(400, 130, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(450, 130, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#F5F5F5';
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.ellipse(220, 350, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(270, 350, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(320, 350, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(370, 350, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(420, 350, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(470, 350, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(520, 350, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(570, 350, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#F5F5F5';
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.ellipse(250, 380, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(300, 380, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(350, 380, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(400, 380, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(450, 380, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(500, 380, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(550, 380, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#F5F5F5';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.ellipse(300, 410, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(350, 410, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(400, 410, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(450, 410, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(500, 410, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#F5F5F5';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.ellipse(300, 440, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(350, 440, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(400, 440, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(450, 440, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(500, 440, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#F5F5F5';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.ellipse(350, 470, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(400, 470, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.ellipse(450, 470, 6, 3, 0, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#F5F5F5';
+        ctx.fill();
+        
+
+      }
+    }
+  </script>
+ </head>
+ <body onload="draw();">
+  <div class="container">
+    <canvas id="canvas" width="800" height="600"></canvas>
+  </div>
+ </body>
+</html>
